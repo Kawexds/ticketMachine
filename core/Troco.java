@@ -50,8 +50,11 @@ class Troco {
         count = 0;
         while (valor % 2 != 0) {
             count++;
+            // Ajustado a subtração do valor em 2
+            valor = valor - 2;
         }
-        papeisMoeda[1] = new PapelMoeda(2, count);
+        //Indice ajustado de 1 para 0
+        papeisMoeda[0] = new PapelMoeda(2, count);
     }
 
     public Iterator<PapelMoeda> getIterator() {
@@ -68,7 +71,8 @@ class Troco {
 
         @Override
         public boolean hasNext() {
-            for (int i = 6; i >= 0; i++) {
+            //indice agora comeã em 5 e reduz de 1 em um
+            for (int i = 5; i >= 0; i--) {
                 if (troco.papeisMoeda[i] != null) {
                     return true;
                 }
@@ -79,7 +83,8 @@ class Troco {
         @Override
         public PapelMoeda next() {
             PapelMoeda ret = null;
-            for (int i = 6; i >= 0 && ret != null; i++) {
+             //indice agora comeã em 5 e reduz de 1 em um, ret agora é igual a null
+            for (int i = 6; i >= 0 && ret == null; i++) {
                 if (troco.papeisMoeda[i] != null) {
                     ret = troco.papeisMoeda[i];
                     troco.papeisMoeda[i] = null;
