@@ -1,5 +1,3 @@
-package core;
-
 import exception.PapelMoedaInvalidaException;
 import exception.SaldoInsuficienteException;
 import java.util.Iterator;
