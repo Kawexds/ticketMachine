@@ -37,9 +37,9 @@ public class TicketMachine {
         return saldo;
     }
     // Objeto troco não instanciado
-    /*public Iterator<Integer> getTroco() {
+    public Iterator<Integer> getTroco() {
         return Troco troco = new Troco();
-    }*/
+    }
 
     public String imprimir() throws SaldoInsuficienteException {
         if (saldo < valor) {
