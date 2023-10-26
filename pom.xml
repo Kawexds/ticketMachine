@@ -14,7 +14,7 @@
 
     <build>
         <sourceDirectory>core</sourceDirectory>
-        <testSourceDirectory>Source Code Inspection/src/test/java</testSourceDirectory>
+        <testSourceDirectory>teste</testSourceDirectory>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
