@@ -13,7 +13,7 @@
     </properties>
 
     <build>
-        <sourceDirectory>Source Code Inspection/src/br/calebe/ticketmachine</sourceDirectory>
+        <sourceDirectory>Source Code Inspection/src/br/calebe/teste2</sourceDirectory>
         <testSourceDirectory>Source Code Inspection/src/br/calebe/ticketmachine/teste</testSourceDirectory>
         <plugins>
             <plugin>
