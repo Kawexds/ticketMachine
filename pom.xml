@@ -14,7 +14,7 @@
 
     <build>
         <sourceDirectory>SourceCodeInspection/src/br/calebe/teste2</sourceDirectory>
-        <testSourceDirectory>SourceCodeInspection/src/br/teste3</testSourceDirectory>
+        <testSourceDirectory>SourceCodeInspection/src/br/calebe</testSourceDirectory>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
