@@ -24,19 +24,14 @@
                     <source>1.8</source>
                     <target>1.8</target>
                 </configuration>
-            </plugin>
-        </plugins>
-    </build>
-
-         <build>
-             <plugins>
-                 <plugin>
+                  <plugin>
                      <groupId>org.apache.maven.plugins</groupId>
                      <artifactId>maven-surefire-plugin</artifactId>
                      <version>3.0.0</version>
                  </plugin>
-             </plugins>
-         </build>
+            </plugin>
+        </plugins>
+    </build>
 
     <dependencies>
         <!-- JUnit 4 for writing and running unit tests -->
