@@ -1,4 +1,4 @@
-package br.calebe.ticketmachine.core;
+package br.calebe.teste2.core;
 
 import java.util.Iterator;
 

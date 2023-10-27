@@ -1,13 +1,10 @@
-package br.calebe.ticketmachine.core;
+package br.calebe.teste2.core;
 
 import br.calebe.ticketmachine.exception.PapelMoedaInvalidaException;
 import br.calebe.ticketmachine.exception.SaldoInsuficienteException;
 import java.util.Iterator;
 
-/**
- *
- * @author Calebe de Paula Bianchini
- */
+
 public class TicketMachine {
 
     protected int valor;
@@ -37,7 +34,7 @@ public class TicketMachine {
         return saldo;
     }
     // Objeto troco não instanciado
-    public Iterator<Integer> getTroco() {
+    public Iterator<PapelMoeda> getTroco() {
         Troco troco = new Troco(this.saldo - this.valor); 
         return troco.getIterator();
     }

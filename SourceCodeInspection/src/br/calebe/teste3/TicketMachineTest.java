@@ -1,7 +1,7 @@
-package br.calebe.ticketmachine.core;
+package br.calebe.teste2;
 
-import br.calebe.ticketmachine.exception.PapelMoedaInvalidaException;
-import br.calebe.ticketmachine.exception.SaldoInsuficienteException;
+import br.calebe.teste2.exception.PapelMoedaInvalidaException;
+import br.calebe.teste2.exception.SaldoInsuficienteException;
 import org.junit.Test;
 import org.junit.Before;
 
