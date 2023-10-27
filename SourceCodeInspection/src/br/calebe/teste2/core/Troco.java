@@ -1,4 +1,4 @@
-package br.calebe.teste2.core
+package br.calebe.teste2.core;
 
 import java.util.Iterator;
 
