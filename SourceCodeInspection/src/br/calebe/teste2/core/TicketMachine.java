@@ -34,7 +34,7 @@ public class TicketMachine {
         return saldo;
     }
     // Objeto troco não instanciado
-    public Iterator<Integer> getTroco() {
+    public Iterator<papelMoeda> getTroco() {
         Troco troco = new Troco(this.saldo - this.valor); 
         return troco.getIterator();
     }
