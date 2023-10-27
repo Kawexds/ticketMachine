@@ -15,33 +15,46 @@ class Troco {
         int count = 0;
         while (valor % 100 != 0) {
             count++;
+            // Ajustado a subtração do valor em 100
+            valor = valor - 100;
         }
         papeisMoeda[5] = new PapelMoeda(100, count);
         count = 0;
         while (valor % 50 != 0) {
             count++;
+            // Ajustado a subtração do valor em 50
+            valor = valor - 50;
         }
         papeisMoeda[4] = new PapelMoeda(50, count);
         count = 0;
         while (valor % 20 != 0) {
             count++;
+            // Ajustado a subtração do valor em 20
+            valor = valor - 20;
         }
         papeisMoeda[3] = new PapelMoeda(20, count);
         count = 0;
         while (valor % 10 != 0) {
             count++;
+            // Ajustado a subtração do valor em 10
+            valor = valor - 10;
         }
         papeisMoeda[2] = new PapelMoeda(10, count);
         count = 0;
         while (valor % 5 != 0) {
             count++;
+            // Ajustado a subtração do valor em 5
+            valor = valor - 5;
         }
         papeisMoeda[1] = new PapelMoeda(5, count);
         count = 0;
         while (valor % 2 != 0) {
             count++;
+            // Ajustado a subtração do valor em 2
+            valor = valor - 2;
         }
-        papeisMoeda[1] = new PapelMoeda(2, count);
+        //Indice ajustado de 1 para 0
+        papeisMoeda[0] = new PapelMoeda(2, count);
     }
 
     public Iterator<PapelMoeda> getIterator() {
@@ -58,7 +71,8 @@ class Troco {
 
         @Override
         public boolean hasNext() {
-            for (int i = 6; i >= 0; i++) {
+            //indice agora comeã em 5 e reduz de 1 em um
+            for (int i = 5; i >= 0; i--) {
                 if (troco.papeisMoeda[i] != null) {
                     return true;
                 }
@@ -69,7 +83,8 @@ class Troco {
         @Override
         public PapelMoeda next() {
             PapelMoeda ret = null;
-            for (int i = 6; i >= 0 && ret != null; i++) {
+             //indice agora comeã em 5 e reduz de 1 em um, ret agora é igual a null
+            for (int i = 6; i >= 0 && ret == null; i++) {
                 if (troco.papeisMoeda[i] != null) {
                     ret = troco.papeisMoeda[i];
                     troco.papeisMoeda[i] = null;
