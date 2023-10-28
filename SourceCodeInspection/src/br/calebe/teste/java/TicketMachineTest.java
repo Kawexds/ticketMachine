@@ -1,7 +1,7 @@
-package src.br.calebe.teste2;
+package br.calebe.teste2.core;
 
-import src.br.calebe.teste2.exception.PapelMoedaInvalidaException;
-import src.br.calebe.teste2.exception.SaldoInsuficienteException;
+import br.calebe.teste2.exception.PapelMoedaInvalidaException;
+import br.calebe.teste2.exception.SaldoInsuficienteException;
 import org.junit.Test;
 import org.junit.Before;
 
